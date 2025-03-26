@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css">
+  <title>LOURAENA's PROFILE</title>
+
+  <style>
+    
+.containera{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px;
+  align-items: center;
+}
+
+.container {
+  width: 350px; /* Fixed width for all containers */
+  min-height: 100px; /* Adjusted height to make it long */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15); /* Transparent glass effect */
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+.container h2 {
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.container p {
+  font-size: 15px;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+.container a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container a:hover {
+  background-color: #cc5500;
+}
+  </style>
+  
+</head>
+<body>
+  <header>
+        <div class="logo">LOURAENA</div>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="project.html">Projects</a></li>
+              <li><a href="classmate.html" class="active">Classmate</a></li>
+            </ul>
+          </nav>
+    
+        <div class="burger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        </div>
+  </header>
+<div class="containera">
+  <div class="container">
+    <h2>John Doe</h2>
+    <p>Gender: Male</p>
+    <p>Course: 2nd Year - Bachelor of Science in Information Technology (BSIT)</p>
+  </div>
+  <div class="container">
+    <h2>Jane Smith</h2>
+    <p>Gender: Female</p>
+    <p>Course: 2nd Year - Bachelor of Science in Information Technology (BSIT)</p>
+  </div>
+  <div class="container">
+    <h2>Michael Johnson</h2>
+    <p>Gender: Male</p>
+    <p>Course: 2nd Year - Bachelor of Science in Information Technology (BSIT)</p>
+  </div>
+</div>
+  
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+      document.querySelector('.burger').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
